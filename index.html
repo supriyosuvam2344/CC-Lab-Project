@@ -3,30 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cloud Computing Lab Project</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>CC Lab Project</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between p-6">
-  <div class="max-w-3xl mx-auto w-full pt-12">
+<body>
+  <div class="container">
     <!-- Header -->
-    <div class="border-b border-slate-800 pb-6 mb-8">
-      <span class="text-xs uppercase tracking-widest font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800/80 px-2.5 py-1 rounded-full">
-        Render PaaS Deployment Live
-      </span>
-      <h1 class="text-3xl font-bold mt-4">Cloud Computing Lab Demonstration</h1>
-      <p class="text-slate-400 mt-2 text-sm">Static web architecture deployed via Render Platform-as-a-Service.</p>
-    </div>
+    <header class="header">
+      <span class="badge">PAAS DEPLOYMENT LIVE</span>
+      <h1>Cloud Computing Lab Demonstration</h1>
+      <p class="subtitle">Static web architecture.</p>
+    </header>
 
     <!-- Cards Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-      <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
-        <h2 class="text-base font-semibold text-white mb-1">Architecture</h2>
-        <p class="text-sm text-slate-400">Global CDN hosting, GitHub CI/CD integration, edge-ready static assets.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <h2>Architecture</h2>
+        <p>Global CDN hosting, GitHub CI/CD integration, edge-ready static assets.</p>
       </div>
-      <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
-        <h2 class="text-base font-semibold text-white mb-1">Status Check</h2>
-        <p class="text-sm text-emerald-400 flex items-center gap-2 mt-1">
-          <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <div class="card">
+        <h2>Status Check</h2>
+        <p class="status">
+          <span class="pulse-dot"></span>
           200 OK — Deployed successfully
         </p>
       </div>
